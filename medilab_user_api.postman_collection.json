@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "1be5784a-c024-4421-9744-231377a326a6",
+		"name": "medilab_user_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ4NXQiOiJNell4TW1Ga09HWXdNV0kwWldObU5EY3hOR1l3WW1NNFpUQTNNV0kyTkRBelpHUXpOR00wWkdSbE5qSmtPREZrWkRSaU9URmtNV0ZoTXpVMlpHVmxOZyIsImtpZCI6Ik16WXhNbUZrT0dZd01XSTBaV05tTkRjeE5HWXdZbU00WlRBM01XSTJOREF6WkdRek5HTTBaR1JsTmpKa09ERmtaRFJpT1RGa01XRmhNelUyWkdWbE5nX1JTMjU2IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJDaGFybGVzIiwiYXV0IjoiQVBQTElDQVRJT05fVVNFUiIsImF1ZCI6IlhmMEhKOU81MFdBNDZWb2pFckNmQ0h3WjZHUWEiLCJuYmYiOjE2MzYyOTM2NDUsImF6cCI6IlhmMEhKOU81MFdBNDZWb2pFckNmQ0h3WjZHUWEiLCJzY29wZSI6Im9wZW5pZCIsImlzcyI6Imh0dHBzOlwvXC9sb2NhbGhvc3Q6OTQ0M1wvb2F1dGgyXC90b2tlbiIsImdyb3VwcyI6WyJJbnRlcm5hbFwvZXZlcnlvbmUiLCJNZWRpbGFiQWRtaW4iLCJJbnRlcm5hbFwvc3lzdGVtX3ByaW1hcnlfTWVkaWxhYkFkbWluIl0sImV4cCI6MTYzNjI5NzI0NSwiaWF0IjoxNjM2MjkzNjQ1LCJqdGkiOiJkZjFjM2ZjNy0yZThiLTRjNDgtYTIyZC0xMmMzMTY4ZGI2MDYifQ.WrYgTgxX7ABdy5hO-y0AaAO1zH4Q6wQMAzZ1QVvCrxyhsDo7cO0fZkeaoHM95g0k0D5Z6HV_G2XraGM3N0tvlYrN8fSQ3_4nWPIDiLGgBDb7sBI6J0ymLirsU_hj0lD3jNnPgqikpZjbVQxa8OojOqpb9_Ue_trXABDfFKsudb_1aJ1d2GCrC74LzbyV1GaeGZVAUv1TtMVME8h2RoZ1hjKrqu4eUXHx5l97JmSH4tXxyfbM6xv8ewMnYl_InNfWQLx-rB9Mb8jfwigxjNt4oDzSZ5IlGYDLLcNo51X2Zlw69wUlRIuAe8WgjB2Xr0LfsSkxdnS5ohcGVcxfebgLGg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Narsi\",\r\n    \"lastName\":\"S\",\r\n    \"userId\":\"narsiS\",\r\n    \"email\":\"narsiS@yopmail.com\",\r\n    \"dob\":\"11/07/1976\",\r\n    \"gender\":\"Male\",\r\n    \"shortBiography\":\"Cardiologist\",\r\n    \"status\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5003/api/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"Charles\",\r\n    \"password\":\"testUser@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5003/api/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5003/api/token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ4NXQiOiJNell4TW1Ga09HWXdNV0kwWldObU5EY3hOR1l3WW1NNFpUQTNNV0kyTkRBelpHUXpOR00wWkdSbE5qSmtPREZrWkRSaU9URmtNV0ZoTXpVMlpHVmxOZyIsImtpZCI6Ik16WXhNbUZrT0dZd01XSTBaV05tTkRjeE5HWXdZbU00WlRBM01XSTJOREF6WkdRek5HTTBaR1JsTmpKa09ERmtaRFJpT1RGa01XRmhNelUyWkdWbE5nX1JTMjU2IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJDaGFybGVzIiwiYXV0IjoiQVBQTElDQVRJT05fVVNFUiIsImF1ZCI6IlhmMEhKOU81MFdBNDZWb2pFckNmQ0h3WjZHUWEiLCJuYmYiOjE2MzYyOTIzNzAsImF6cCI6IlhmMEhKOU81MFdBNDZWb2pFckNmQ0h3WjZHUWEiLCJzY29wZSI6Im9wZW5pZCIsImlzcyI6Imh0dHBzOlwvXC9sb2NhbGhvc3Q6OTQ0M1wvb2F1dGgyXC90b2tlbiIsImdyb3VwcyI6WyJJbnRlcm5hbFwvZXZlcnlvbmUiLCJNZWRpbGFiQWRtaW4iLCJJbnRlcm5hbFwvc3lzdGVtX3ByaW1hcnlfTWVkaWxhYkFkbWluIl0sImV4cCI6MTYzNjI5NTk3MCwiaWF0IjoxNjM2MjkyMzcwLCJqdGkiOiIxNGE5Y2YwMy0wNWYwLTQ2YmMtYTlkOS1jNWI0M2JkMzhmMDMifQ.N69MchKaQKzv6NMTZPV9W7QJj48Ok3en00IJ6fMAFxTJnMuqXtaZ0bZW4PkeCzoHx7ef0abBXNeGAgwCUKMuh9PlO7RpzzRsMerURkEJCDWnuhe8dirDyW_fkLZa0_RUcDg_s-18uZRk7IWNQ4v3gxVMFFnQg6078OSZf8cootY_B7AyHPyTYWu9_utQI_uEqC7Gho-8txs-yk__lkZX2vKK-YMg9HKEnn3sxbGx6kvG-ihWOa3So55wT36U4Q--umykkb0mlQGWMek8JIuu7F9zQVjJNHL4SKiRkxoWJFz8-CRdKT_v9MMhjlXSyWI6BCmZeEQjnaKac7fXDR5ZeQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5003/api/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5011/api/v1.0/notifications",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ4NXQiOiJNell4TW1Ga09HWXdNV0kwWldObU5EY3hOR1l3WW1NNFpUQTNNV0kyTkRBelpHUXpOR00wWkdSbE5qSmtPREZrWkRSaU9URmtNV0ZoTXpVMlpHVmxOZyIsImtpZCI6Ik16WXhNbUZrT0dZd01XSTBaV05tTkRjeE5HWXdZbU00WlRBM01XSTJOREF6WkdRek5HTTBaR1JsTmpKa09ERmtaRFJpT1RGa01XRmhNelUyWkdWbE5nX1JTMjU2IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJDaGFybGVzIiwiYXV0IjoiQVBQTElDQVRJT05fVVNFUiIsImF1ZCI6IlhmMEhKOU81MFdBNDZWb2pFckNmQ0h3WjZHUWEiLCJuYmYiOjE2MzYyODc5MjQsImF6cCI6IlhmMEhKOU81MFdBNDZWb2pFckNmQ0h3WjZHUWEiLCJzY29wZSI6Im9wZW5pZCIsImlzcyI6Imh0dHBzOlwvXC9sb2NhbGhvc3Q6OTQ0M1wvb2F1dGgyXC90b2tlbiIsImdyb3VwcyI6WyJJbnRlcm5hbFwvZXZlcnlvbmUiLCJNZWRpbGFiQWRtaW4iLCJJbnRlcm5hbFwvc3lzdGVtX3ByaW1hcnlfTWVkaWxhYkFkbWluIl0sImV4cCI6MTYzNjI5MTUyNCwiaWF0IjoxNjM2Mjg3OTI0LCJqdGkiOiIwODc0NzNkNS1iYWUzLTQxYWEtOWQzYi0xMWE0NzM0Nzk3MTQifQ.CC_2_43KTZldwpJVbCLPKTqTis4Kfz9fyd8QGCYPOijVPSSZpgfatWH1ZA-U30YZPiv_JJRMoYB9qWgO5DyuS_NkI6fO8GsokX4dLb98Vl5c-EcZ64oxuFxTPXwml0rGananpwo3SaN3FRunkmMJRutaVo97CiIEsp04oYgSA0jaiZjSqOUyC0XFWAFymFLFdwWugm7mFEdM7VmxLOcfDz82_DIxjbFiR9fyyGINvjAfWNThq4l9gVCsfTSc0ovhN9nCdvj2zp5WsVmorGQJew3CuFbKxslXGDHfYBRrQ6J4XMuJMWAz044S-LFoLrwcqr1LKwXc-5GIxIqVQWPs0g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\":\"narsi.s@yopmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5011/api/v1.0/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5011",
+					"path": [
+						"api",
+						"v1.0",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

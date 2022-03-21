@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;spring-boot-hibernate-thymeleaf&apos; to &apos;01-spring-boot-hibernate-thymeleaf&apos;&#x0D;&#x0A;- Original element: &apos;spring-boot-hibernate-thymeleaf&apos;&#x0D;&#x0A;- Renamed element: &apos;spring-boot-hibernate-thymeleaf&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;spring-boot-hibernate-thymeleaf&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=spring-boot-hibernate-thymeleaf" name="01-spring-boot-hibernate-thymeleaf" references="true" stamp="1637512259075" version="1.0"/>
+</session>
